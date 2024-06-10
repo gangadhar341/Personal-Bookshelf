@@ -1,0 +1,138 @@
+.Toastify__toast--success {
+  background-color: #28a745;
+  color: white;
+}
+
+.Toastify__toast--warn {
+  background-color: #ffc107;
+  color: black;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.book-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.bookshelf-button {
+  background-color: #007bff;
+  margin: 10px;
+}
+
+.bookshelf-button:hover {
+  background-color: #0056b3;
+}
+
+.bookshelf-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bookshelf-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 200px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .bookshelf-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-card,
+  .bookshelf-card {
+    width: 90%;
+  }
+}
